@@ -82,7 +82,7 @@ img { display: block; max-width: 100%; }
 .date-countdown { display: block; margin-top: .32rem; color: var(--gold); font-size: .68rem; font-weight: 700; }
 .hero-badge { position: absolute; right: clamp(2rem, 9vw, 9rem); bottom: 17%; display: grid; width: clamp(8rem, 17vw, 14rem); aspect-ratio: 1; place-items: center; transform: rotate(7deg); border: 1px solid var(--gold); border-radius: 50%; background: var(--paper); box-shadow: var(--shadow); }
 .hero-badge::before { position: absolute; inset: .45rem; border: 1px dashed var(--forest); border-radius: 50%; content: ""; }
-.hero-badge img { width: 82%; height: 82%; border-radius: 50%; object-fit: cover; animation: logo-pulse 6.5s ease-in-out infinite; transform-origin: center; }
+.hero-badge img { width: 82%; height: 82%; border-radius: 50%; object-fit: cover; animation: logo-pulse 4s ease-in-out infinite; transform-origin: center; }
 .hero-side-note { position: absolute; top: 37%; right: var(--page-gutter); color: var(--gold); font-family: var(--display); font-size: clamp(2.4rem, 5vw, 4.5rem); font-weight: 800; line-height: .76; text-align: right; text-shadow: 2px 2px 0 var(--forest-deep); }
 .scroll-cue { position: absolute; right: var(--page-gutter); bottom: 1.4rem; display: flex; align-items: center; gap: .8rem; color: var(--white); font-size: .67rem; letter-spacing: .08em; text-decoration: none; }
 .scroll-cue b { display: grid; width: 2rem; height: 2rem; place-items: center; border: 1px solid var(--line-light); border-radius: 50%; color: var(--gold); font-size: 1rem; }
@@ -233,7 +233,7 @@ img { display: block; max-width: 100%; }
 
 @keyframes logo-pulse {
   0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.045); }
+  50% { transform: scale(1.075); }
 }
 
 @keyframes hero-arrive {
