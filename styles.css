@@ -43,9 +43,17 @@ img { display: block; max-width: 100%; }
 .site-nav { display: flex; align-items: center; gap: clamp(1rem, 2.2vw, 2.2rem); }
 .site-nav > a:not(.nav-cta) { color: var(--white); font-size: .8rem; font-weight: 700; text-decoration: none; transition: color .2s ease; }
 .site-nav > a:not(.nav-cta):hover { color: var(--gold); }
+.site-nav > a[aria-current="page"] { color: var(--gold); }
 .nav-cta { display: inline-flex; gap: .8rem; align-items: center; padding: .78rem 1.1rem; border: 1px solid var(--gold); border-radius: 999px; color: var(--white); font-size: .78rem; font-weight: 700; text-decoration: none; transition: background .2s ease, color .2s ease; }
 .nav-cta:hover { background: var(--gold); color: var(--forest-deep); }
 .menu-toggle { display: none; }
+
+.lodging-page { min-height: 100vh; }
+.lodging-hero { padding: 10.5rem var(--page-gutter) 2.5rem; background: var(--forest-deep); color: var(--white); }
+.lodging-hero h1 { margin: 0; color: var(--gold); font-family: var(--display); font-size: clamp(4rem, 10vw, 7rem); font-weight: 900; line-height: .86; letter-spacing: -.035em; text-transform: uppercase; }
+.lodging-content { padding: clamp(2rem, 5vw, 4.5rem) var(--page-gutter) var(--section-space); }
+.lodging-flyer { width: min(100%, 58rem); margin: 0 auto; overflow: hidden; border-radius: .45rem; background: var(--white); box-shadow: var(--shadow); }
+.lodging-flyer img { width: 100%; height: auto; }
 
 .hero { position: relative; display: flex; min-height: min(52rem, 100svh); min-height: clamp(43rem, 90svh, 61rem); align-items: center; overflow: hidden; isolation: isolate; background: var(--forest-deep); color: var(--white); }
 .hero-photo, .hero-photo::after, .hero-shade, .hero-halftone { position: absolute; inset: 0; }
@@ -282,6 +290,10 @@ img { display: block; max-width: 100%; }
   body { font-size: .94rem; }
   .brand img { width: 2.9rem; height: 2.9rem; }
   .brand-name { font-size: 1.15rem; }
+  .lodging-hero { padding-top: 8.7rem; padding-bottom: 1.9rem; }
+  .lodging-hero h1 { font-size: clamp(3.8rem, 16vw, 5.6rem); }
+  .lodging-content { padding: 1.4rem .8rem var(--section-space); }
+  .lodging-flyer { border-radius: .25rem; }
   .hero { min-height: 47rem; min-height: 94svh; align-items: end; }
   .hero-photo { inset: 0 0 0 4%; clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
   .hero-photo img { object-position: 53% center; }
