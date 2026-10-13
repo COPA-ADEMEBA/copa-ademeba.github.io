@@ -34,7 +34,7 @@ img { display: block; max-width: 100%; }
 
 .skip-link { position: fixed; z-index: 30; top: .75rem; left: .75rem; padding: .75rem 1rem; transform: translateY(-160%); background: var(--white); color: var(--ink); }
 .skip-link:focus { transform: translateY(0); }
-.site-header { position: absolute; z-index: 10; inset: 0 0 auto; color: var(--white); }
+.site-header { position: absolute; z-index: 10; inset: 0 0 auto; background: rgba(11, 29, 23, .9); color: var(--white); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
 .nav-shell { display: flex; align-items: center; justify-content: space-between; min-height: 5.7rem; padding: .8rem var(--page-gutter); border-bottom: 1px solid var(--line-light); }
 .brand, .footer-brand { display: inline-flex; align-items: center; gap: .75rem; text-decoration: none; }
 .brand img { width: 3.35rem; height: 3.35rem; border: 2px solid var(--gold); border-radius: 50%; object-fit: cover; }
