@@ -1,0 +1,247 @@
+.lodging-sample-page {
+  --sample-forest: var(--forest, #06452f);
+  --sample-deep: var(--forest-deep, #0b1d17);
+  --sample-gold: var(--gold, #f2c500);
+  --sample-orange: var(--orange, #ef5b32);
+  --sample-paper: var(--paper, #f4f0e7);
+  --sample-white: var(--white, #fffdf8);
+  --sample-ink: var(--ink, #111813);
+  --sample-muted: #68766f;
+  overflow: hidden;
+  background: var(--sample-paper);
+  color: var(--sample-ink);
+}
+
+.lodging-sample-hero {
+  position: relative;
+  display: grid;
+  min-height: 34rem;
+  align-items: center;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 10rem var(--page-gutter, 5vw) 6rem;
+  background: var(--sample-deep);
+  color: var(--sample-white);
+}
+
+.lodging-sample-hero__photo,
+.lodging-sample-hero__shade,
+.lodging-sample-hero__court {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.lodging-sample-hero__photo { object-fit: cover; object-position: 56% 48%; }
+.lodging-sample-hero__shade { z-index: 0; background: linear-gradient(90deg, var(--sample-deep) 0%, color-mix(in srgb, var(--sample-deep) 94%, transparent) 38%, color-mix(in srgb, var(--sample-deep) 46%, transparent) 74%, color-mix(in srgb, var(--sample-deep) 20%, transparent) 100%), linear-gradient(0deg, var(--sample-deep), transparent 46%); }
+.lodging-sample-hero__court {
+  z-index: 0;
+  inset: auto -10rem -17rem auto;
+  width: min(58vw, 52rem);
+  aspect-ratio: 1;
+  border: 1px solid color-mix(in srgb, var(--sample-gold) 52%, transparent);
+  border-radius: 50%;
+  box-shadow: 0 0 0 2.1rem color-mix(in srgb, var(--sample-gold) 11%, transparent), 0 0 0 4.2rem color-mix(in srgb, var(--sample-gold) 7%, transparent);
+  pointer-events: none;
+}
+
+.lodging-sample-hero__inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: min(100%, 82rem);
+  grid-template-columns: minmax(0, 1fr) 15rem;
+  align-items: end;
+  gap: clamp(2rem, 6vw, 6rem);
+  margin: 0 auto;
+}
+
+.lodging-sample-hero__copy { max-width: 57rem; animation: sample-arrive .7s cubic-bezier(.2, .75, .25, 1) both; }
+.lodging-sample-eyebrow,
+.lodging-sample-kicker {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  margin: 0 0 1.2rem;
+  color: var(--sample-gold);
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.lodging-sample-eyebrow span { width: 1.8rem; height: 2px; background: var(--sample-orange); }
+.lodging-sample-flag { display: inline-flex; margin: 0 0 .9rem; padding: .32rem .62rem; border: 1px solid color-mix(in srgb, var(--sample-white) 45%, transparent); border-radius: 999px; color: var(--sample-white); font-size: .62rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.lodging-sample-hero h1 { margin: 0; font-family: var(--display, "Barlow Condensed", sans-serif); font-size: clamp(4.4rem, 10vw, 8.2rem); font-weight: 900; line-height: .76; letter-spacing: -.045em; text-transform: uppercase; }
+.lodging-sample-hero h1 span { display: block; max-width: 15ch; margin: .22em 0 0 .08em; color: var(--sample-gold); font-size: .48em; line-height: .92; letter-spacing: .015em; }
+.lodging-sample-hero__intro { margin: 1.7rem 0 0 .15rem; color: var(--sample-white); font-size: clamp(.9rem, 1.5vw, 1.1rem); font-weight: 500; }
+.lodging-sample-hero__intro i { padding-inline: .4rem; color: var(--sample-orange); font-style: normal; }
+.lodging-sample-jump { display: inline-flex; align-items: center; gap: 1.2rem; margin: 1.5rem 0 0 .1rem; padding: .78rem 1.2rem; border-radius: 999px; background: var(--sample-gold); color: var(--sample-deep); font-size: .78rem; font-weight: 800; text-decoration: none; transition: transform .25s cubic-bezier(.2, .75, .25, 1), background .25s ease; }
+.lodging-sample-jump:hover { transform: translateY(-2px); background: var(--sample-white); }
+.lodging-sample-jump span { font-size: 1.15rem; line-height: .8; }
+.lodging-sample-brandplate { display: grid; gap: .25rem; justify-items: center; padding: .75rem .8rem .6rem; border: 1px solid color-mix(in srgb, var(--sample-white) 54%, transparent); border-radius: .35rem; background: var(--sample-white); box-shadow: 0 1.5rem 3.5rem color-mix(in srgb, var(--sample-deep) 26%, transparent); transform: rotate(2deg); }
+.lodging-sample-brandplate img { display: block; width: 100%; height: auto; }
+.lodging-sample-brandplate span { color: var(--sample-deep); font-size: .55rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+.lodging-sample-hero__index { position: absolute; z-index: 1; top: 7.5rem; right: var(--page-gutter, 5vw); color: color-mix(in srgb, var(--sample-white) 76%, transparent); font-family: var(--display, "Barlow Condensed", sans-serif); font-size: .76rem; font-weight: 700; letter-spacing: .19em; }
+
+.lodging-sample-breakfast {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  width: min(calc(100% - var(--page-gutter, 5vw) - var(--page-gutter, 5vw)), 75rem);
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: clamp(1rem, 3vw, 2.5rem);
+  margin: -2.2rem auto 0;
+  padding: 1.25rem clamp(1.1rem, 3vw, 2.5rem);
+  background: var(--sample-gold);
+  color: var(--sample-deep);
+  box-shadow: 0 1rem 2.5rem color-mix(in srgb, var(--sample-deep) 16%, transparent);
+}
+
+.lodging-sample-breakfast__index { display: grid; min-width: 5rem; min-height: 4rem; place-items: center; border-right: 1px solid color-mix(in srgb, var(--sample-deep) 28%, transparent); font-family: var(--display, "Barlow Condensed", sans-serif); font-size: 1.2rem; font-weight: 900; letter-spacing: .08em; }
+.lodging-sample-breakfast p { margin: 0 0 .15rem; font-size: .63rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.lodging-sample-breakfast h2 { margin: 0; font-family: var(--display, "Barlow Condensed", sans-serif); font-size: clamp(1.55rem, 3.2vw, 2.6rem); font-weight: 800; line-height: .95; text-transform: uppercase; }
+.lodging-sample-breakfast strong { padding-left: 1rem; border-left: 1px solid color-mix(in srgb, var(--sample-deep) 28%, transparent); font-size: .77rem; line-height: 1.35; }
+
+.lodging-sample-options { width: min(100%, 82rem); margin: 0 auto; padding: clamp(4.5rem, 8vw, 7rem) var(--page-gutter, 5vw) clamp(4.5rem, 8vw, 7rem); }
+.lodging-sample-section-head { display: flex; align-items: end; justify-content: space-between; gap: 2rem; margin-bottom: 2rem; }
+.lodging-sample-kicker { margin-bottom: .8rem; color: var(--sample-forest); font-size: .62rem; }
+.lodging-sample-kicker span { color: var(--sample-orange); font-family: var(--display, "Barlow Condensed", sans-serif); font-size: 1.25rem; letter-spacing: 0; }
+.lodging-sample-section-head h2,
+.lodging-sample-rooms__heading h2 { margin: 0; font-family: var(--display, "Barlow Condensed", sans-serif); font-size: clamp(3.1rem, 6.5vw, 5.8rem); font-weight: 900; line-height: .82; letter-spacing: -.025em; text-transform: uppercase; }
+.lodging-sample-section-head__note { margin: 0 .25rem .15rem 0; color: var(--sample-muted); font-size: .78rem; line-height: 1.55; text-align: right; }
+.lodging-sample-hotel-grid { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr); align-items: stretch; gap: clamp(.85rem, 2.4vw, 2rem); }
+.lodging-sample-hotel { position: relative; min-width: 0; overflow: hidden; border: 1px solid color-mix(in srgb, var(--sample-ink) 8%, transparent); background: var(--sample-white); box-shadow: 0 1.25rem 3rem color-mix(in srgb, var(--sample-deep) 8%, transparent); }
+.lodging-sample-hotel--junior { margin-top: 2rem; background: var(--sample-deep); color: var(--sample-white); }
+.lodging-sample-hotel__head { position: relative; display: flex; min-height: 8.5rem; align-items: center; gap: 1rem; overflow: hidden; padding: 1.4rem clamp(1.1rem, 2.7vw, 2.1rem); background: var(--sample-forest); color: var(--sample-white); }
+.lodging-sample-hotel--junior .lodging-sample-hotel__head { background: var(--sample-orange); color: var(--sample-deep); }
+.lodging-sample-hotel__head::after { position: absolute; right: -2.7rem; bottom: -7.2rem; width: 12rem; aspect-ratio: 1; border: 1px solid color-mix(in srgb, var(--sample-white) 28%, transparent); border-radius: 50%; content: ""; box-shadow: 0 0 0 1rem color-mix(in srgb, var(--sample-white) 8%, transparent), 0 0 0 2rem color-mix(in srgb, var(--sample-white) 6%, transparent); }
+.lodging-sample-hotel--junior .lodging-sample-hotel__head::after { border-color: color-mix(in srgb, var(--sample-deep) 30%, transparent); box-shadow: 0 0 0 1rem color-mix(in srgb, var(--sample-deep) 8%, transparent), 0 0 0 2rem color-mix(in srgb, var(--sample-deep) 6%, transparent); }
+.lodging-sample-hotel__number { position: relative; z-index: 1; align-self: flex-start; padding-top: .22rem; color: var(--sample-gold); font-family: var(--display, "Barlow Condensed", sans-serif); font-size: 1rem; font-weight: 800; letter-spacing: .12em; }
+.lodging-sample-hotel--junior .lodging-sample-hotel__number { color: var(--sample-white); }
+.lodging-sample-hotel__head > div { position: relative; z-index: 1; min-width: 0; }
+.lodging-sample-hotel__head p { margin: 0 0 .2rem; font-size: .63rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+.lodging-sample-hotel__head h3 { margin: 0; font-family: var(--display, "Barlow Condensed", sans-serif); font-size: clamp(1.8rem, 3.2vw, 2.7rem); font-weight: 800; line-height: .92; text-transform: uppercase; }
+.lodging-sample-hotel__head h3 span { display: block; font-family: var(--body, "DM Sans", sans-serif); font-size: .47em; font-weight: 600; letter-spacing: .08em; }
+.lodging-sample-hotel__marker { position: relative; z-index: 1; display: grid; width: 3rem; height: 3rem; flex: 0 0 auto; place-items: center; margin-left: auto; border: 1px solid color-mix(in srgb, currentColor 55%, transparent); border-radius: 50%; font-family: var(--display, "Barlow Condensed", sans-serif); font-size: .72rem; font-weight: 900; letter-spacing: .04em; }
+.lodging-sample-hotel__body { display: flex; min-height: 15.5rem; flex-direction: column; justify-content: space-between; padding: clamp(.9rem, 2vw, 1.45rem); }
+.lodging-sample-rates { width: 100%; border-collapse: collapse; font-size: clamp(.63rem, .84vw, .78rem); font-variant-numeric: tabular-nums; }
+.lodging-sample-rates th,
+.lodging-sample-rates td { padding: .78rem .42rem; text-align: right; white-space: nowrap; }
+.lodging-sample-rates thead { background: var(--sample-gold); color: var(--sample-deep); }
+.lodging-sample-rates thead th { font-size: .64rem; font-weight: 800; }
+.lodging-sample-rates th:first-child,
+.lodging-sample-rates td:first-child { text-align: left; }
+.lodging-sample-rates tbody tr:nth-child(odd) { background: color-mix(in srgb, var(--sample-forest) 7%, var(--sample-white)); }
+.lodging-sample-hotel--junior .lodging-sample-rates { color: var(--sample-white); }
+.lodging-sample-hotel--junior .lodging-sample-rates tbody tr:nth-child(odd) { background: color-mix(in srgb, var(--sample-white) 8%, var(--sample-deep)); }
+.lodging-sample-hotel--junior .lodging-sample-rates tbody tr:nth-child(even) { background: color-mix(in srgb, var(--sample-white) 3%, var(--sample-deep)); }
+.lodging-sample-rates tbody th { font-weight: 600; }
+.lodging-sample-rates tbody td:last-child { font-weight: 800; }
+.lodging-sample-tax-note { margin: 1rem 0 0; color: var(--sample-muted); font-size: .7rem; font-style: italic; }
+.lodging-sample-tax-note span { display: block; }
+.lodging-sample-hotel--junior .lodging-sample-tax-note { color: color-mix(in srgb, var(--sample-white) 69%, transparent); }
+
+.lodging-sample-rooms { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(2rem, 7vw, 7rem); padding: clamp(3.5rem, 7vw, 6rem) max(var(--page-gutter, 5vw), calc((100vw - 72rem) / 2)); background: var(--sample-white); }
+.lodging-sample-rooms__heading h2 { max-width: 9ch; font-size: clamp(3rem, 5vw, 4.7rem); }
+.lodging-sample-room-list { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+.lodging-sample-room-list article { padding: 1rem 0 0 1.15rem; border-top: 2px solid var(--sample-gold); border-left: 1px solid color-mix(in srgb, var(--sample-forest) 20%, transparent); }
+.lodging-sample-room-list p { margin: .4rem 0; color: var(--sample-muted); font-size: .79rem; line-height: 1.5; }
+.lodging-sample-room-list .lodging-sample-room-list__label { margin: 0 0 .8rem; color: var(--sample-deep); font-weight: 800; }
+.lodging-sample-room-list__label span { display: block; color: var(--sample-forest); font-size: .7rem; font-weight: 600; }
+.lodging-sample-room-list b { color: var(--sample-ink); }
+
+.lodging-sample-reservation { width: min(calc(100% - var(--page-gutter, 5vw) - var(--page-gutter, 5vw)), 75rem); margin: clamp(3rem, 6vw, 5rem) auto; padding: clamp(1.5rem, 4vw, 3rem); background: var(--sample-deep); color: var(--sample-white); }
+.lodging-sample-reservation__top { display: flex; align-items: end; justify-content: space-between; gap: 2rem; padding-bottom: 1.4rem; border-bottom: 1px solid color-mix(in srgb, var(--sample-white) 25%, transparent); }
+.lodging-sample-reservation .lodging-sample-kicker { color: var(--sample-gold); }
+.lodging-sample-reservation h2 { margin: 0; font-family: var(--display, "Barlow Condensed", sans-serif); font-size: clamp(2.6rem, 5vw, 4.4rem); font-weight: 800; line-height: .9; text-transform: uppercase; }
+.lodging-sample-code { display: grid; gap: .15rem; min-width: 12rem; padding: .8rem 1rem; border-left: 3px solid var(--sample-gold); background: color-mix(in srgb, var(--sample-white) 8%, transparent); }
+.lodging-sample-code span { color: var(--sample-gold); font-size: .61rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+.lodging-sample-code strong { font-family: var(--display, "Barlow Condensed", sans-serif); font-size: 1.75rem; letter-spacing: .03em; }
+.lodging-sample-contacts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; padding: 1.5rem 0 .8rem; }
+.lodging-sample-contacts p { display: grid; gap: .35rem; margin: 0; padding-left: .9rem; border-left: 1px solid color-mix(in srgb, var(--sample-gold) 55%, transparent); }
+.lodging-sample-contacts b { color: color-mix(in srgb, var(--sample-white) 73%, transparent); font-size: .75rem; }
+.lodging-sample-contacts a { color: var(--sample-white); font-size: .95rem; font-weight: 600; text-decoration-color: color-mix(in srgb, var(--sample-gold) 65%, transparent); text-underline-offset: .2em; }
+.lodging-sample-contacts a:hover { color: var(--sample-gold); }
+.lodging-sample-disclaimer { margin: 1.25rem 0 0; color: color-mix(in srgb, var(--sample-white) 62%, transparent); font-size: .7rem; font-style: italic; text-align: right; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; clip-path: inset(50%); }
+
+@keyframes sample-arrive {
+  from { opacity: 0; transform: translateY(1rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 900px) {
+  .lodging-sample-hero { min-height: 31rem; }
+  .lodging-sample-hero__inner { grid-template-columns: minmax(0, 1fr) 11.5rem; gap: 1.4rem; }
+  .lodging-sample-breakfast { grid-template-columns: auto minmax(0, 1fr); }
+  .lodging-sample-breakfast strong { grid-column: 2; padding: .55rem 0 0; border-top: 1px solid color-mix(in srgb, var(--sample-deep) 28%, transparent); border-left: 0; }
+  .lodging-sample-hotel-grid { grid-template-columns: 1fr 1fr; gap: .85rem; }
+  .lodging-sample-hotel--junior { margin-top: 1.2rem; }
+  .lodging-sample-hotel__marker { display: none; }
+  .lodging-sample-rooms { grid-template-columns: 1fr; gap: 2rem; }
+  .lodging-sample-rooms__heading h2 { max-width: none; }
+}
+
+@media (max-width: 620px) {
+  .lodging-sample-hero { min-height: auto; padding: 8rem 1.15rem 4.7rem; }
+  .lodging-sample-hero__photo { object-position: 54% center; }
+  .lodging-sample-hero__shade { background: linear-gradient(90deg, color-mix(in srgb, var(--sample-deep) 94%, transparent), color-mix(in srgb, var(--sample-deep) 61%, transparent)), linear-gradient(0deg, var(--sample-deep), transparent 70%); }
+  .lodging-sample-hero__court { right: -16rem; bottom: -11rem; width: 33rem; }
+  .lodging-sample-hero__inner { grid-template-columns: 1fr; gap: 1.4rem; }
+  .lodging-sample-hero h1 { font-size: clamp(4rem, 19vw, 6rem); }
+  .lodging-sample-hero h1 span { max-width: 13ch; font-size: .43em; }
+  .lodging-sample-hero__intro { max-width: 20rem; margin-top: 1.2rem; font-size: .85rem; }
+  .lodging-sample-brandplate { width: 10.5rem; justify-self: end; margin-top: .4rem; padding: .45rem .5rem; }
+  .lodging-sample-brandplate span { font-size: .48rem; }
+  .lodging-sample-hero__index { top: 6.3rem; right: 1.15rem; }
+  .lodging-sample-breakfast { width: calc(100% - 2rem); grid-template-columns: 1fr auto; gap: .65rem 1rem; margin-top: -1.4rem; padding: 1rem; }
+  .lodging-sample-breakfast__index { min-width: auto; min-height: auto; grid-column: 1 / -1; justify-self: start; padding: 0 0 .4rem; border-right: 0; border-bottom: 1px solid color-mix(in srgb, var(--sample-deep) 28%, transparent); font-size: .84rem; }
+  .lodging-sample-breakfast h2 { font-size: clamp(1.55rem, 7vw, 2rem); }
+  .lodging-sample-breakfast p { font-size: .55rem; }
+  .lodging-sample-breakfast strong { grid-column: 2; grid-row: 2; align-self: end; padding: 0 0 0 .65rem; border-top: 0; border-left: 1px solid color-mix(in srgb, var(--sample-deep) 28%, transparent); font-size: .62rem; }
+  .lodging-sample-options { padding: 4rem 1rem; }
+  .lodging-sample-section-head { display: block; margin-bottom: 1.45rem; }
+  .lodging-sample-section-head h2 { font-size: clamp(3rem, 14vw, 4.2rem); }
+  .lodging-sample-section-head__note { margin-top: .8rem; text-align: left; }
+  .lodging-sample-hotel-grid { grid-template-columns: 1fr; gap: .9rem; }
+  .lodging-sample-hotel--junior { margin-top: 0; }
+  .lodging-sample-hotel__head { min-height: 7.2rem; gap: .7rem; padding: 1rem; }
+  .lodging-sample-hotel__head h3 { font-size: 2rem; }
+  .lodging-sample-hotel__number { font-size: .85rem; }
+  .lodging-sample-hotel__body { min-height: auto; padding: .75rem .55rem 1rem; }
+  .lodging-sample-rates { font-size: .65rem; }
+  .lodging-sample-rates th,
+  .lodging-sample-rates td { padding: .68rem .23rem; }
+  .lodging-sample-rates thead th { font-size: .58rem; }
+  .lodging-sample-tax-note { margin: .8rem .2rem 0; font-size: .65rem; }
+  .lodging-sample-rooms { gap: 1.6rem; padding: 3.5rem 1.2rem; }
+  .lodging-sample-rooms__heading h2 { font-size: clamp(2.8rem, 13vw, 4rem); }
+  .lodging-sample-room-list { grid-template-columns: 1fr; gap: 1.1rem; }
+  .lodging-sample-room-list article { padding-top: .8rem; }
+  .lodging-sample-reservation { width: calc(100% - 2rem); margin: 2rem auto 3rem; padding: 1.2rem; }
+  .lodging-sample-reservation__top { display: grid; gap: 1rem; }
+  .lodging-sample-reservation h2 { font-size: clamp(2.4rem, 11vw, 3.4rem); }
+  .lodging-sample-code { min-width: 0; width: fit-content; }
+  .lodging-sample-contacts { grid-template-columns: 1fr 1fr; gap: 1rem .65rem; padding-top: 1.2rem; }
+  .lodging-sample-contacts p { padding-left: .6rem; }
+  .lodging-sample-contacts b { font-size: .68rem; }
+  .lodging-sample-contacts a { font-size: .8rem; }
+  .lodging-sample-disclaimer { text-align: left; }
+}
+
+@media (max-width: 360px) {
+  .lodging-sample-rates { font-size: .59rem; }
+  .lodging-sample-rates th,
+  .lodging-sample-rates td { padding-inline: .16rem; }
+  .lodging-sample-rates thead th { font-size: .53rem; }
+  .lodging-sample-contacts { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lodging-sample-hero__copy { animation: none; }
+  .lodging-sample-jump { transition: none; }
+}

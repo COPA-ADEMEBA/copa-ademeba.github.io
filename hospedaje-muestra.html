@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b1d17">
+    <meta name="description" content="Muestra editable de hospedaje para equipos foráneos de la Copa ADEMEBA Yucatán 2026.">
+    <title>Muestra editable de hospedaje · Copa ADEMEBA Yucatán 2026</title>
+    <link rel="icon" href="assets/logo-ademeba-2026.jpg" type="image/jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&amp;family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="hospedaje-muestra.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="index.html#inicio" aria-label="ADEMEBA Yucatán, inicio">
+          <img src="assets/logo-ademeba-2026.jpg" alt="" width="56" height="56">
+          <span class="brand-name">ADEMEBA <small>YUCATÁN</small></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span>Menú</span><span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+          <a href="index.html#categorias">Categorías</a>
+          <a href="index.html#costos">Costos</a>
+          <a href="index.html#sedes">Sedes</a>
+          <a href="hospedaje.html" aria-current="page">Hospedaje</a>
+          <a href="index.html#galeria">Galería</a>
+          <a href="index.html#preguntas">Dudas</a>
+          <a class="nav-cta" href="https://wa.me/529992224047?text=Hola%2C%20quiero%20informes%20sobre%20la%20Copa%20ADEMEBA%20Yucat%C3%A1n%202026." target="_blank" rel="noopener">Pedir informes <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido" class="lodging-sample-page">
+      <section class="lodging-sample-hero" aria-labelledby="sample-title">
+        <img class="lodging-sample-hero__photo" src="assets/basquetbol-exterior.webp" alt="" fetchpriority="high">
+        <div class="lodging-sample-hero__shade" aria-hidden="true"></div>
+        <div class="lodging-sample-hero__court" aria-hidden="true"></div>
+        <div class="lodging-sample-hero__inner">
+          <div class="lodging-sample-hero__copy">
+            <p class="lodging-sample-eyebrow"><span></span>Básquetbol formativo · Yucatán</p>
+            <p class="lodging-sample-flag">Muestra de diseño · Editable</p>
+            <h1 id="sample-title">Hospedaje <span>para equipos foráneos</span></h1>
+            <p class="lodging-sample-hero__intro">Opciones de hospedaje en Mérida <i aria-hidden="true">·</i> Tarifas por habitación</p>
+            <a class="lodging-sample-jump" href="#opciones">Ver opciones <span aria-hidden="true">↓</span></a>
+          </div>
+          <aside class="lodging-sample-brandplate" aria-label="Marca hotelera incluida en la propuesta">
+            <img src="assets/cityexpress-hoteles-logo.png" alt="City Express Hoteles" width="800" height="500">
+            <span>Hospedaje para el torneo</span>
+          </aside>
+        </div>
+        <span class="lodging-sample-hero__index" aria-hidden="true">MER · 26</span>
+      </section>
+
+      <section class="lodging-sample-breakfast" aria-label="Desayuno incluido">
+        <span class="lodging-sample-breakfast__index">INCLUIDO</span>
+        <div>
+          <p>Un buen día empieza en la mesa</p>
+          <h2>Desayuno buffet tipo americano</h2>
+        </div>
+        <strong>En la compra<br>de tu habitación</strong>
+      </section>
+
+      <section id="opciones" class="lodging-sample-options" aria-labelledby="options-title">
+        <div class="lodging-sample-section-head">
+          <div>
+            <p class="lodging-sample-kicker"><span>01</span> Estancias en Mérida</p>
+            <h2 id="options-title">Elige tu hospedaje</h2>
+          </div>
+          <p class="lodging-sample-section-head__note">Consulta las tarifas por habitación.<br>Los totales son por noche.</p>
+        </div>
+
+        <div class="lodging-sample-hotel-grid">
+          <article class="lodging-sample-hotel lodging-sample-hotel--main" aria-labelledby="city-express-title">
+            <header class="lodging-sample-hotel__head">
+              <span class="lodging-sample-hotel__number" aria-hidden="true">01</span>
+              <div>
+                <p>Ciudad de Mérida</p>
+                <h3 id="city-express-title">City Express <span>by Marriott</span></h3>
+              </div>
+              <span class="lodging-sample-hotel__marker" aria-hidden="true">CE</span>
+            </header>
+            <div class="lodging-sample-hotel__body">
+              <table class="lodging-sample-rates">
+                <caption class="visually-hidden">Tarifas por habitación por noche en City Express by Marriott Mérida</caption>
+                <thead>
+                  <tr><th scope="col">Habitación</th><th scope="col">Base</th><th scope="col">Impuestos*</th><th scope="col">Total</th></tr>
+                </thead>
+                <tbody>
+                  <tr><th scope="row">Sencilla</th><td>$1,000.00</td><td>$205.00</td><td>$1,205.00</td></tr>
+                  <tr><th scope="row">Doble</th><td>$1,150.00</td><td>$235.75</td><td>$1,385.75</td></tr>
+                  <tr><th scope="row">Triple</th><td>$1,300.00</td><td>$266.50</td><td>$1,566.50</td></tr>
+                  <tr><th scope="row">Cuádruple</th><td>$1,400.00</td><td>$287.00</td><td>$1,687.00</td></tr>
+                </tbody>
+              </table>
+              <p class="lodging-sample-tax-note">*IVA 16% + ISH 4.5%. <span>Tarifa total por noche.</span></p>
+            </div>
+          </article>
+
+          <article class="lodging-sample-hotel lodging-sample-hotel--junior" aria-labelledby="city-junior-title">
+            <header class="lodging-sample-hotel__head">
+              <span class="lodging-sample-hotel__number" aria-hidden="true">02</span>
+              <div>
+                <p>Mérida Altabrisa</p>
+                <h3 id="city-junior-title">City Express <span>Junior</span></h3>
+              </div>
+              <span class="lodging-sample-hotel__marker" aria-hidden="true">CEJ</span>
+            </header>
+            <div class="lodging-sample-hotel__body">
+              <table class="lodging-sample-rates">
+                <caption class="visually-hidden">Tarifas por habitación por noche en City Express Junior Mérida Altabrisa</caption>
+                <thead>
+                  <tr><th scope="col">Habitación</th><th scope="col">Base</th><th scope="col">Impuestos*</th><th scope="col">Total</th></tr>
+                </thead>
+                <tbody>
+                  <tr><th scope="row">Sencilla</th><td>$850.00</td><td>$174.25</td><td>$1,024.25</td></tr>
+                  <tr><th scope="row">Doble</th><td>$950.00</td><td>$194.75</td><td>$1,144.75</td></tr>
+                </tbody>
+              </table>
+              <p class="lodging-sample-tax-note">*IVA 16% + ISH 4.5%. <span>Tarifa total por noche.</span></p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="lodging-sample-rooms" aria-labelledby="rooms-title">
+        <div class="lodging-sample-rooms__heading">
+          <p class="lodging-sample-kicker"><span>02</span> Antes de reservar</p>
+          <h2 id="rooms-title">Descripción de habitaciones</h2>
+        </div>
+        <div class="lodging-sample-room-list">
+          <article>
+            <p class="lodging-sample-room-list__label">City Express <span>· Mérida</span></p>
+            <p><b>Sencilla:</b> 1 cama queen, 1–2 adultos.</p>
+            <p><b>Doble:</b> 2 camas matrimoniales, 2 adultos.</p>
+            <p><b>Triple:</b> 2 camas matrimoniales, hasta 3 adultos.</p>
+            <p><b>Cuádruple:</b> 2 camas matrimoniales, hasta 4 adultos.</p>
+          </article>
+          <article>
+            <p class="lodging-sample-room-list__label">City Express Junior <span>· Mérida Altabrisa</span></p>
+            <p><b>Sencilla:</b> 1 cama queen, 1–2 adultos.</p>
+            <p><b>Doble:</b> 2 camas individuales, 2 adultos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="lodging-sample-reservation" aria-labelledby="reservation-title">
+        <div class="lodging-sample-reservation__top">
+          <div>
+            <p class="lodging-sample-kicker"><span>03</span> Reservaciones</p>
+            <h2 id="reservation-title">Contactos para reservar</h2>
+          </div>
+          <div class="lodging-sample-code"><span>Código</span><strong>Ademeba26</strong></div>
+        </div>
+        <div class="lodging-sample-contacts">
+          <p><b>Alberto Muñoz</b><a href="tel:+529838674142">983 867 4142</a></p>
+          <p><b>Sofía Cervera</b><a href="tel:+529991632250">999 163 2250</a></p>
+          <p><b>Ivette Sosa</b><a href="tel:+529992286220">999 228 6220</a></p>
+          <p><b>Pablo Ceballos</b><a href="tel:+529871003824">987 100 3824</a></p>
+        </div>
+        <p class="lodging-sample-disclaimer">Consulta disponibilidad y confirma la tarifa al reservar.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="index.html#inicio"><img src="assets/logo-ademeba-2026.jpg" alt="" width="58" height="58"><span class="footer-brand-name">ADEMEBA<small>YUCATÁN · COPA 2026</small></span></a>
+      <div class="footer-contacts"><span>WHATSAPP · 999 222 4047</span><a href="https://wa.me/529992224047" target="_blank" rel="noopener">Escribir por WhatsApp ↗</a><span>TELÉFONOS</span><a href="tel:+529991288730">999 128 8730</a><a href="tel:+529993349475">999 334 9475</a></div>
+      <a class="back-top" href="#contenido">Volver arriba <span aria-hidden="true">↑</span></a>
+      <small class="copyright">Copa ADEMEBA Yucatán · 2026 · Muestra editable</small>
+    </footer>
+  </body>
+</html>
