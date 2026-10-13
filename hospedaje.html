@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#0b1d17">
-    <meta name="description" content="Consulta las opciones de hospedaje para equipos foráneos de la Copa ADEMEBA Yucatán 2026.">
+    <meta name="description" content="Opciones de hospedaje en Mérida para equipos foráneos: tarifas, habitaciones, desayuno incluido y contactos de reservación.">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Hospedaje · Copa ADEMEBA Yucatán 2026">
     <meta property="og:description" content="Opciones de hospedaje en Mérida para equipos de la Copa ADEMEBA Yucatán 2026.">
-    <meta property="og:image" content="assets/hospedaje-copa-ademeba-2026.png">
     <title>Hospedaje · Copa ADEMEBA Yucatán 2026</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&amp;family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="hospedaje-muestra.css">
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -40,14 +40,133 @@
       </div>
     </header>
 
-    <main id="contenido" class="lodging-page">
-      <section class="lodging-hero" aria-labelledby="lodging-title">
-        <h1 id="lodging-title">Hospedaje</h1>
+    <main id="contenido" class="lodging-sample-page">
+      <section class="lodging-sample-hero" aria-labelledby="lodging-title">
+        <img class="lodging-sample-hero__photo" src="assets/basquetbol-exterior.webp" alt="" fetchpriority="high">
+        <div class="lodging-sample-hero__shade" aria-hidden="true"></div>
+        <div class="lodging-sample-hero__court" aria-hidden="true"></div>
+        <div class="lodging-sample-hero__inner">
+          <div class="lodging-sample-hero__copy">
+            <p class="lodging-sample-eyebrow"><span></span>Básquetbol formativo · Yucatán</p>
+            <h1 id="lodging-title">Hospedaje <span>para equipos foráneos</span></h1>
+            <p class="lodging-sample-hero__intro">Opciones de hospedaje en Mérida <i aria-hidden="true">·</i> Tarifas por habitación</p>
+            <a class="lodging-sample-jump" href="#opciones">Ver opciones <span aria-hidden="true">↓</span></a>
+          </div>
+          <aside class="lodging-sample-brandplate" aria-label="City Express Hoteles">
+            <img src="assets/cityexpress-hoteles-logo.png" alt="City Express Hoteles" width="800" height="500">
+            <span>Hospedaje para el torneo</span>
+          </aside>
+        </div>
+        <span class="lodging-sample-hero__index" aria-hidden="true">MER · 26</span>
       </section>
-      <section class="lodging-content" aria-label="Flyer de opciones de hospedaje">
-        <figure class="lodging-flyer">
-          <img src="assets/hospedaje-copa-ademeba-2026.png" alt="Flyer de hospedaje para equipos foráneos con tarifas por habitación, desayuno buffet tipo americano incluido, código de reservación y contactos." width="1103" height="1427" fetchpriority="high">
-        </figure>
+
+      <section class="lodging-sample-breakfast" aria-label="Desayuno incluido">
+        <span class="lodging-sample-breakfast__index">INCLUIDO</span>
+        <div>
+          <p>Un buen día empieza en la mesa</p>
+          <h2>Desayuno buffet tipo americano</h2>
+        </div>
+        <strong>En la compra<br>de tu habitación</strong>
+      </section>
+
+      <section id="opciones" class="lodging-sample-options" aria-labelledby="options-title">
+        <div class="lodging-sample-section-head">
+          <div>
+            <p class="lodging-sample-kicker"><span>01</span> Estancias en Mérida</p>
+            <h2 id="options-title">Elige tu hospedaje</h2>
+          </div>
+          <p class="lodging-sample-section-head__note">Consulta las tarifas por habitación.<br>Los totales son por noche.</p>
+        </div>
+
+        <div class="lodging-sample-hotel-grid">
+          <article class="lodging-sample-hotel lodging-sample-hotel--main" aria-labelledby="city-express-title">
+            <header class="lodging-sample-hotel__head">
+              <span class="lodging-sample-hotel__number" aria-hidden="true">01</span>
+              <div>
+                <p>Mérida</p>
+                <h3 id="city-express-title">City Express <span>by Marriott</span></h3>
+              </div>
+              <span class="lodging-sample-hotel__marker" aria-hidden="true">CE</span>
+            </header>
+            <div class="lodging-sample-hotel__body">
+              <table class="lodging-sample-rates">
+                <caption class="visually-hidden">Tarifas por habitación por noche en City Express by Marriott Mérida</caption>
+                <thead>
+                  <tr><th scope="col">Habitación</th><th scope="col">Base</th><th scope="col">Impuestos*</th><th scope="col">Total</th></tr>
+                </thead>
+                <tbody>
+                  <tr><th scope="row">Sencilla</th><td>$1,000.00</td><td>$205.00</td><td>$1,205.00</td></tr>
+                  <tr><th scope="row">Doble</th><td>$1,150.00</td><td>$235.75</td><td>$1,385.75</td></tr>
+                  <tr><th scope="row">Triple</th><td>$1,300.00</td><td>$266.50</td><td>$1,566.50</td></tr>
+                  <tr><th scope="row">Cuádruple</th><td>$1,400.00</td><td>$287.00</td><td>$1,687.00</td></tr>
+                </tbody>
+              </table>
+              <p class="lodging-sample-tax-note">*IVA 16% + ISH 4.5%. <span>Tarifa total por noche.</span></p>
+            </div>
+          </article>
+
+          <article class="lodging-sample-hotel lodging-sample-hotel--junior" aria-labelledby="city-junior-title">
+            <header class="lodging-sample-hotel__head">
+              <span class="lodging-sample-hotel__number" aria-hidden="true">02</span>
+              <div>
+                <p>Mérida Altabrisa</p>
+                <h3 id="city-junior-title">City Express <span>Junior</span></h3>
+              </div>
+              <span class="lodging-sample-hotel__marker" aria-hidden="true">CEJ</span>
+            </header>
+            <div class="lodging-sample-hotel__body">
+              <table class="lodging-sample-rates">
+                <caption class="visually-hidden">Tarifas por habitación por noche en City Express Junior Mérida Altabrisa</caption>
+                <thead>
+                  <tr><th scope="col">Habitación</th><th scope="col">Base</th><th scope="col">Impuestos*</th><th scope="col">Total</th></tr>
+                </thead>
+                <tbody>
+                  <tr><th scope="row">Sencilla</th><td>$850.00</td><td>$174.25</td><td>$1,024.25</td></tr>
+                  <tr><th scope="row">Doble</th><td>$950.00</td><td>$194.75</td><td>$1,144.75</td></tr>
+                </tbody>
+              </table>
+              <p class="lodging-sample-tax-note">*IVA 16% + ISH 4.5%. <span>Tarifa total por noche.</span></p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="lodging-sample-rooms" aria-labelledby="rooms-title">
+        <div class="lodging-sample-rooms__heading">
+          <p class="lodging-sample-kicker"><span>02</span> Antes de reservar</p>
+          <h2 id="rooms-title">Descripción de habitaciones</h2>
+        </div>
+        <div class="lodging-sample-room-list">
+          <article>
+            <p class="lodging-sample-room-list__label">City Express <span>· Mérida</span></p>
+            <p><b>Sencilla:</b> 1 cama queen, 1–2 adultos.</p>
+            <p><b>Doble:</b> 2 camas matrimoniales, 2 adultos.</p>
+            <p><b>Triple:</b> 2 camas matrimoniales, hasta 3 adultos.</p>
+            <p><b>Cuádruple:</b> 2 camas matrimoniales, hasta 4 adultos.</p>
+          </article>
+          <article>
+            <p class="lodging-sample-room-list__label">City Express Junior <span>· Mérida Altabrisa</span></p>
+            <p><b>Sencilla:</b> 1 cama queen, 1–2 adultos.</p>
+            <p><b>Doble:</b> 2 camas individuales, 2 adultos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="lodging-sample-reservation" aria-labelledby="reservation-title">
+        <div class="lodging-sample-reservation__top">
+          <div>
+            <p class="lodging-sample-kicker"><span>03</span> Reservaciones</p>
+            <h2 id="reservation-title">Contactos para reservar</h2>
+          </div>
+          <div class="lodging-sample-code"><span>Código</span><strong>Ademeba26</strong></div>
+        </div>
+        <div class="lodging-sample-contacts">
+          <p><b>Alberto Muñoz</b><a href="tel:+529838674142">983 867 4142</a></p>
+          <p><b>Sofía Cervera</b><a href="tel:+529991632250">999 163 2250</a></p>
+          <p><b>Ivette Sosa</b><a href="tel:+529992286220">999 228 6220</a></p>
+          <p><b>Pablo Ceballos</b><a href="tel:+529871003824">987 100 3824</a></p>
+        </div>
+        <p class="lodging-sample-disclaimer">Consulta disponibilidad y confirma la tarifa al reservar.</p>
       </section>
     </main>
 
