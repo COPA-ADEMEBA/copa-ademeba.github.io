@@ -162,6 +162,7 @@ img { display: block; max-width: 100%; }
 .prize-card__scope { margin-top: auto; padding-top: .6rem; border-top: 1px solid currentColor; font-size: .62rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
 .prize-card__categories { position: relative; display: grid; width: 100%; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .35rem; margin: .6rem 0 0; padding: 0; list-style: none; }
 .prize-card__categories li { min-width: 0; padding: .27rem .15rem; border: 1px solid currentColor; font-size: .65rem; font-weight: 700; line-height: 1.2; text-align: center; }
+.prize-card--orange > .prize-card__timing { width: 100%; margin: .1rem 0 1rem; padding: .7rem .8rem; border-left: .25rem solid var(--forest-deep); background: var(--gold); color: var(--forest-deep); font-family: var(--display); font-size: 1.1rem; font-weight: 800; line-height: 1.05; text-transform: uppercase; }
 
 .costs-band { position: relative; overflow: hidden; background: var(--forest-deep); color: var(--white); }
 .costs-wrap { position: relative; display: grid; width: min(100%, 80rem); grid-template-columns: 1fr .9fr; align-items: center; gap: 4rem; margin: auto; padding: var(--section-space) var(--page-gutter); isolation: isolate; }
