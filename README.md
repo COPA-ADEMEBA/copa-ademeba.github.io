@@ -20,7 +20,8 @@ El archivo `netlify.toml` permite publicar la misma carpeta en Netlify sin coman
 - Categorías: Escuelita (2019–2020, mixto), Micro (2017–2018, mixto), Mini (2015–2016), Pasarela (2013–2014), Cadetes (2011–2012) y Élite (2009–2010); estas últimas cuatro en ramas varonil y femenil.
 - Inscripción: $3,000 MXN por equipo.
 - Arbitraje: $320 MXN, aparte de la inscripción.
-- Premios: los primeros lugares de cada categoría ganan un juego de 12 uniformes; los segundos lugares de todas las categorías entran a la rifa de 2 juegos de 12 uniformes. La inscripción incluye participación en la rifa especial de 1 juego de 12 uniformes por cada categoría; el boleto se entrega al momento de inscribirse.
+- Premios para Pasarela, Cadetes y Élite: los primeros lugares ganan un juego de 12 uniformes por categoría; los segundos lugares entran a la rifa de 2 juegos de 12 uniformes.
+- Rifa especial para Escuelita, Micro y Mini: la inscripción incluye participación en la rifa de 1 juego de 12 uniformes por cada categoría; el boleto se entrega al momento de inscribirse.
 - Sedes: Universidad Modelo (duela), Escuela Modelo, Gimnasio Polifuncional, canchas exteriores del Polifuncional y Centro Deportivo Paralímpico de Yucatán.
 - Informes por WhatsApp: 999 222 4047. El póster también muestra los teléfonos 999 128 8730 y 999 334 9475.
 
