@@ -144,6 +144,23 @@ img { display: block; max-width: 100%; }
 .category-card--green { background: var(--forest-mid); color: var(--white); }
 .category-card[hidden] { display: none; }
 
+.prizes-section { padding-block: var(--section-space); overflow: hidden; background: var(--forest); color: var(--white); }
+.prizes-section .section-index { color: var(--gold); }
+.prizes-heading { margin-bottom: 2.5rem; }
+.prizes-heading h2 span { color: var(--gold); }
+.prizes-heading .section-aside { color: var(--mist); }
+.prize-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .8rem; }
+.prize-card { position: relative; display: flex; min-height: 20rem; flex-direction: column; align-items: flex-start; padding: clamp(1.25rem, 2.6vw, 2rem); overflow: hidden; isolation: isolate; }
+.prize-card::after { position: absolute; z-index: -1; right: -3rem; bottom: -5rem; width: 12rem; aspect-ratio: 1; border: 1px solid currentColor; border-radius: 50%; box-shadow: 0 0 0 1rem transparent, 0 0 0 1.05rem currentColor, 0 0 0 2rem transparent, 0 0 0 2.05rem currentColor; content: ""; opacity: .13; }
+.prize-card--paper { background: var(--white); color: var(--forest-deep); }
+.prize-card--gold { background: var(--gold); color: var(--forest-deep); }
+.prize-card--orange { background: var(--orange); color: var(--forest-deep); }
+.prize-card__number { font-size: .62rem; font-weight: 700; letter-spacing: .16em; }
+.prize-card h3 { margin: 2.1rem 0 .8rem; font-family: var(--display); font-size: clamp(2.4rem, 3.5vw, 3.5rem); font-weight: 800; line-height: .86; text-transform: uppercase; }
+.prize-card__highlight { margin: 0 0 .4rem; font-family: var(--display); font-size: clamp(1.55rem, 2.3vw, 2.2rem); font-weight: 800; line-height: .95; text-transform: uppercase; }
+.prize-card > p:not(.prize-card__highlight) { margin: .3rem 0 1rem; font-size: .82rem; font-weight: 600; line-height: 1.45; }
+.prize-card__scope { margin-top: auto; padding-top: .6rem; border-top: 1px solid currentColor; font-size: .62rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+
 .costs-band { position: relative; overflow: hidden; background: var(--forest-deep); color: var(--white); }
 .costs-wrap { position: relative; display: grid; width: min(100%, 80rem); grid-template-columns: 1fr .9fr; align-items: center; gap: 4rem; margin: auto; padding: var(--section-space) var(--page-gutter); isolation: isolate; }
 .costs-copy { max-width: 36rem; }
@@ -274,6 +291,10 @@ img { display: block; max-width: 100%; }
   .quick-facts > div:first-child { justify-content: center; }
   .intro-grid { grid-template-columns: 1fr; gap: 1.5rem; }
   .category-grid { grid-template-columns: repeat(2, 1fr); }
+  .prize-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .prize-card:last-child { grid-column: 1 / -1; min-height: 16rem; }
+  .prize-card h3 { font-size: clamp(2.4rem, 5vw, 3.5rem); }
+  .prize-card__highlight { font-size: clamp(1.6rem, 3.5vw, 2.2rem); }
   .costs-wrap { grid-template-columns: 1fr 1fr; gap: 2.2rem; }
   .costs-copy { grid-column: 1 / -1; }
   .costs-copy > p:not(.section-index) { max-width: 40rem; }
@@ -332,6 +353,11 @@ img { display: block; max-width: 100%; }
   .category-branch { font-size: .52rem; }
   .category-number { font-size: .58rem; }
   .category-ball { top: .75rem; right: .8rem; font-size: 1.7rem; }
+  .prizes-heading { margin-bottom: 1.5rem; }
+  .prize-grid { grid-template-columns: 1fr; gap: .6rem; }
+  .prize-card, .prize-card:last-child { grid-column: auto; min-height: 16rem; padding: 1.25rem; }
+  .prize-card h3 { margin-top: 1.6rem; font-size: 2.8rem; }
+  .prize-card__highlight { font-size: 1.8rem; }
   .costs-wrap { grid-template-columns: 1fr; padding-block: var(--section-space); }
   .costs-copy { grid-column: auto; }
   .costs-copy h2 { font-size: clamp(4rem, 19vw, 6rem); }
