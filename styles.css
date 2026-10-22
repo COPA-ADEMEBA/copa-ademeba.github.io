@@ -250,6 +250,7 @@ img { display: block; max-width: 100%; }
 .footer-contacts span { width: 100%; color: var(--gold); font-size: .58rem; font-weight: 700; letter-spacing: .16em; }
 .footer-contacts a, .back-top { color: var(--white); font-size: .72rem; font-weight: 600; text-decoration: none; }
 .footer-contacts a:hover, .back-top:hover { color: var(--gold); }
+.footer-privacy { flex-basis: 100%; }
 .back-top { justify-self: end; }
 .back-top span { margin-left: .4rem; color: var(--gold); }
 .copyright { grid-column: 1 / -1; padding-top: 1rem; border-top: 1px solid var(--line-light); color: var(--muted); font-size: .65rem; }
@@ -258,6 +259,31 @@ img { display: block; max-width: 100%; }
 .lightbox img { max-width: 100%; max-height: 78svh; margin: auto; object-fit: contain; }
 .lightbox-caption { margin: .6rem 3rem 0 .2rem; color: var(--mist); font-size: .76rem; }
 .lightbox-close { position: absolute; top: -.8rem; right: -.8rem; display: grid; width: 2.7rem; height: 2.7rem; place-items: center; border: 1px solid var(--gold); border-radius: 50%; background: var(--gold); color: var(--forest-deep); cursor: pointer; font-size: 1.7rem; line-height: 1; }
+
+.privacy-page { min-height: 100vh; background: var(--paper); }
+.privacy-header { position: relative; }
+.privacy-header .nav-shell { min-height: 5.7rem; }
+.privacy-header .nav-cta { white-space: nowrap; }
+.privacy-hero { padding: clamp(3rem, 7vw, 6rem) var(--page-gutter); background: var(--forest-deep); color: var(--white); }
+.privacy-hero-inner, .privacy-content { width: min(100%, 62rem); margin-inline: auto; }
+.privacy-eyebrow { margin: 0 0 1rem; color: var(--gold); font-size: .7rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+.privacy-hero h1 { max-width: 48rem; margin: 0; font-family: var(--display); font-size: clamp(3.8rem, 10vw, 7rem); font-weight: 900; line-height: .84; letter-spacing: -.025em; text-transform: uppercase; }
+.privacy-hero p:last-child { max-width: 42rem; margin: 1.4rem 0 0; color: var(--mist); }
+.privacy-main { padding: clamp(2rem, 5vw, 4rem) var(--page-gutter) var(--section-space); }
+.privacy-draft-notice { margin-bottom: 2rem; padding: 1.2rem 1.35rem; border-left: .35rem solid var(--gold); background: #fff3bf; color: var(--forest-deep); }
+.privacy-draft-notice strong { display: block; margin-bottom: .25rem; font-family: var(--display); font-size: 1.35rem; letter-spacing: .04em; text-transform: uppercase; }
+.privacy-draft-notice p { margin: 0; font-size: .88rem; }
+.privacy-content h2 { margin: 2.25rem 0 .65rem; color: var(--forest); font-family: var(--display); font-size: 1.8rem; line-height: 1; text-transform: uppercase; }
+.privacy-content p, .privacy-content li { color: #39463e; font-size: .94rem; }
+.privacy-content p { margin: .55rem 0; }
+.privacy-content ul { padding-left: 1.25rem; }
+.privacy-content li + li { margin-top: .35rem; }
+.privacy-content a { color: var(--forest-mid); font-weight: 700; text-underline-offset: .2em; }
+.privacy-placeholder { padding: .08rem .3rem; background: #fff0b2; color: #5c4600; font-weight: 700; }
+.privacy-review-list { margin-top: 2.5rem; padding: 1.4rem; border: 1px solid var(--line); background: rgba(255, 253, 248, .72); }
+.privacy-review-list h2 { margin-top: 0; }
+.privacy-review-list li::marker { color: var(--orange-deep); }
+.privacy-footer-note { grid-column: 1 / -1; color: var(--muted); font-size: .68rem; }
 
 @keyframes logo-pulse {
   0%, 100% { transform: scale(1); }
